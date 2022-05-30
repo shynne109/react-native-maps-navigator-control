@@ -1,0 +1,68 @@
+{
+  "name": "react-native-maps-navigator-control",
+  "version": "1.0.0",
+  "description": "A helper and component library for react-native-maps that enables navigation support",
+  "main": "index.js",
+  "repository": "https://github.com/shynne109/react-native-maps-navigator-control",
+  "bugs": {
+    "url": "https://github.com/shynne109/react-native-maps-navigator-control/issues"
+  },
+  "homepage": "https://github.com/shynne109/react-native-maps-navigator-control#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "react-native",
+    "react-native-maps",
+    "maps",
+    "navigation",
+    "gps",
+    "ios",
+    "android",
+    "react-component"
+  ],
+  "author": "Adedoyin Shina <sbatch2011@gmail.com> (http://purdunamicsolution.com)",
+  "license": "MIT", 
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-maps": ">=0.21.0"
+  },
+  "dependencies": {
+    "geolib": "^3.0.2",
+    "prop-types": "^15.6.2",
+    "react-native-optiongroup": "^0.0.7",
+    "react-native-geolocation-service": "^3.0.0",
+    "expo-location": "~14.2.2"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular"
+      }
+    }
+  }
+}
